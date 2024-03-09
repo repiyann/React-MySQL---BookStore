@@ -33,11 +33,21 @@ cd backend
 yarn install
 ```
 
+```
+cd frontend
+yarn install
+```
+
 - npm: `npm install --recursive` or
 
 ```
 cd backend
-yarn install
+npm install
+```
+
+```
+cd frontend
+npm install
 ```
 
 2. Create an empty database.
@@ -50,17 +60,15 @@ yarn install
 - Yarn:
 
 ```
-
-cd backend yarn dev
-
+cd backend
+yarn dev
 ```
 
 - npm:
 
 ```
-
-cd backend npm run dev
-
+cd backend
+npm run dev
 ```
 
 2. Run Frontend
@@ -68,17 +76,15 @@ cd backend npm run dev
 - Yarn:
 
 ```
-
-cd frontend yarn dev
-
+cd frontend
+yarn dev
 ```
 
 - npm:
 
 ```
-
-cd frontend npm run dev
-
+cd frontend
+npm run dev
 ```
 
 3. Open http://localhost:5173/ with your browser to see the result.
