@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
-import BackButton from '../components/backButton'
-import Spinner from '../components/spinner'
 import axios from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useSnackbar } from 'notistack'
+import BackButton from '../components/backButton'
+import Spinner from '../components/spinner'
 
 const EditBook = () => {
 	const [title, setTitle] = useState('')
@@ -12,8 +12,8 @@ const EditBook = () => {
 	const [loading, setLoading] = useState(false)
 	const { id } = useParams()
 	const { enqueueSnackbar } = useSnackbar()
-
 	const navigate = useNavigate()
+
 	useEffect(() => {
 		setLoading(true)
 		axios
@@ -30,6 +30,7 @@ const EditBook = () => {
 				enqueueSnackbar('Error', { variant: 'error' })
 			})
 	}, [id, enqueueSnackbar])
+
 	const handleEditBook = () => {
 		const data = {
 			title,

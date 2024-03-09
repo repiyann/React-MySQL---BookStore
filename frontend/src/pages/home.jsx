@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
-import Spinner from '../components/spinner'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { MdOutlineAddBox } from 'react-icons/md'
 import BooksCard from '../components/home/booksCard'
 import BooksTable from '../components/home/booksTable'
+import Spinner from '../components/spinner'
 
 const Home = () => {
 	const [books, setBooks] = useState([])
@@ -24,6 +24,7 @@ const Home = () => {
 				setLoading(false)
 			})
 	}, [])
+
 	return (
 		<div className="p-4">
 			<div className="flex justify-center items-center gap-x-4">

@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import axios from 'axios'
+import { useSnackbar } from 'notistack'
 import { useNavigate, useParams } from 'react-router-dom'
 import BackButton from '../components/backButton'
 import Spinner from '../components/spinner'
-import { useSnackbar } from 'notistack'
 
 const DeleteBook = () => {
 	const [loading, setLoading] = useState(false)
@@ -26,6 +26,7 @@ const DeleteBook = () => {
 				console.log(error)
 			})
 	}
+
 	return (
 		<div className="p-4">
 			<BackButton />

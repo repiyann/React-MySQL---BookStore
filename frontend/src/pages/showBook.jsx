@@ -22,6 +22,7 @@ const ShowBook = () => {
 				setLoading(false)
 			})
 	}, [id])
+
 	return (
 		<div className="p-4">
 			<BackButton />
