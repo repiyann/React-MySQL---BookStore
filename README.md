@@ -93,7 +93,3 @@ npm run dev
 
 - GitHub: [@repiyann](https://github.com/repiyann)
 - Instagram: [@repiyann](https://instagram.com/repiyann)
-
-```
-
-```
